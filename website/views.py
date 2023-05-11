@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def index(request):
     login=False;
-    return render(request, "templates/index.html",{"login":login})
+    return render(request, "index.html",{"login":login})
