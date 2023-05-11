@@ -49,3 +49,15 @@ def admin_Comment(request):
 
 def delete_Comment(request):
     return render(request, 'Comment/delete_Comment.html', {})
+
+def create_User(request):
+    return render(request, 'User/create_User.html', {})
+
+def read_Users(request):
+    return render(request, 'User/read_User.html', {})
+
+def admin_User(request):
+    return render(request, 'User/User.html', {})
+
+def delete_User(request):
+    return render(request, 'User/delete_User.html', {})
