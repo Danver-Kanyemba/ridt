@@ -14,7 +14,7 @@ def Logout():
 def Register(request):
     form = Register()
     if request.method == "POST":
-        form = NameForm(request.POST)
+        form = Register(request.POST)
         # check whether it is valid:
         if form.is_valid():
             
