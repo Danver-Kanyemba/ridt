@@ -23,3 +23,29 @@ def Register(request):
     else:
         return render(request, "register.html", {"form":form})
 
+def dashboard(request):
+    return render(request, 'templates/dashboard.html', {})
+
+def create_blog(request):
+    return render(request, 'blog/create_blog.html', {})
+
+def read_blog(request):
+    return render(request, 'blog/read_blog.html', {})
+
+def admin_blog(request):
+    return render(request, 'blog/admin_blog.html', {})
+
+def delete_blog(request):
+    return render(request, 'blog/delete_blog.html', {})
+
+def create_Comment(request):
+    return render(request, 'Comment/create_Comment.html', {})
+
+def read_Comments(request):
+    return render(request, 'Comment/read_Comment.html', {})
+
+def admin_Comment(request):
+    return render(request, 'Comment/Comment.html', {})
+
+def delete_Comment(request):
+    return render(request, 'Comment/delete_Comment.html', {})
